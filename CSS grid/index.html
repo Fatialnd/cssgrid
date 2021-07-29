@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSS Grid</title>
+    <style>
+        
+        #content{
+            grid-template-columns: repeat(8,1fr);
+            grid-auto-rows:minmax(100px,auto) ;
+            grid-gap: 11px;
+            display: grid;
+            max-width: 850px;
+            margin:0 auto;
+        }
+        #content div {
+            background-color:moccasin;
+            padding: 10px;
+
+            
+        }
+        .one{
+            grid-column:1/3;
+            grid-row: 1/3;
+        
+        } 
+        .two{
+            grid-column:3/5;
+            grid-row:1/2;
+            
+        }
+        .three{
+            grid-column:1/3;
+            grid-row:3 /5;
+        }
+        .four{
+            grid-column:3/4;
+            grid-row:2/4;
+        }
+        .five{
+            grid-column:4 /5;
+            grid-row:2/3;
+        }
+        .six{
+            grid-column:3/4;
+            grid-row:4/5;
+        }
+        .seven{
+            grid-column:4/5;
+            grid-row:3/5 ;
+        }
+        .eight{
+            grid-column:1/4;
+            grid-row:5/6;
+        }
+        .nine{
+            grid-column:4/5;
+            grid-row:5/6;
+        }
+        .ten{
+        grid-column:1/5;
+        grid-row:6/7;
+        }
+        
+        
+        </style>
+</head>
+<body>
+<div id="content">
+
+      <div class="one" style="background-color:rgba(26, 131, 26, 0.769);">
+       <img class="pic1" src="/STAGGERED GRID/app.png" alt="apps" height="20px" width="20px">
+    </div>
+
+      <div class="two" style="background-color: rgb(53, 176, 228);">
+        <img src="/STAGGERED GRID/wifi.png" alt="wifi" height="20px" width="20px">
+    </div>
+
+      <div class="three" style="background-color: rgb(252, 101, 46);">
+        <img src="/STAGGERED GRID/send-button.png" alt="send"height="20px" width="20px">
+    </div>
+
+      <div class="four" style="background-color: rgba(255, 183, 0, 0.968);">
+       <img src="/STAGGERED GRID/rounded-rectangle (1).png" alt="rounded-rectangle"height="20px" width="20px">
+    </div>
+
+
+      <div class="five" style="background-color: rgb(167, 90, 22);">
+        <img src="/STAGGERED GRID/map (1).png" alt="map" height="20px" width="20px">
+    </div>
+
+
+      <div class="six" style="background-color: rgb(255, 57, 22);">
+        <img src="/STAGGERED GRID/bluetooth.png" alt="bluetooth" height="20px" width="20px">
+    </div>
+
+      <div class="seven" style="background-color: rgba(40, 79, 196, 0.927);">
+       <img src="/STAGGERED GRID/bed.png" alt="bed"height="20px" width="20px">
+    </div>
+
+      <div class="eight" style="background-color:rgb(225, 20, 109) ;">
+        <img src="/STAGGERED GRID/battery.png" alt="battery"height="20px" width="20px">
+    </div>
+
+      <div class="nine" style="background-color: rgba(147, 11, 147, 0.892);">
+        <img src="/STAGGERED GRID/monitor.png" alt="monitor"height="20px" width="20px">
+    </div>
+
+
+      <div class="ten" style="background-color: rgb(36, 140, 220);">
+      <img src="/STAGGERED GRID/radio.png" alt="radio"height="20px" width="20px">
+    </div>
+
+      
+</div>
+</body>
+</html>
